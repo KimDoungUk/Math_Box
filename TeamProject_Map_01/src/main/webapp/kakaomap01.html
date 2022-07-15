@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Kakao 지도 시작하기</title>
+</head>
+<body>
+	<div id="map" style="width:1280px;height:1080px;"></div>
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=563690bc120a15ac561d9ce73a5aa24e"></script>
+	<script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(37.4996008, 127.031656),
+			level: 6
+		};
+
+		var map = new kakao.maps.Map(container, options);
+		
+		var markerPosition  = new kakao.maps.LatLng(37.4996002, 127.031656); 
+		var markerPosition2  = new kakao.maps.LatLng(37.4991416, 127.030243); 
+
+		// 마커를 생성합니다
+		var marker = new kakao.maps.Marker({
+		    position: markerPosition
+		});
+
+		// 마커가 지도 위에 표시되도록 설정합니다
+		marker.setMap(map);
+		var marker2 = new kakao.maps.Marker({
+		    position: markerPosition2
+		});
+
+		// 마커가 지도 위에 표시되도록 설정합니다
+		marker2.setMap(map);
+
+		// 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+		// marker.setMap(null);    
+	</script>
+</body>
+</html>
