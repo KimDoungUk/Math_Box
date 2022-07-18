@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	<!-- jdbc.properties등록 -->
+	<properties resource="jdbc.properties"></properties>
+	
+	<!-- type Alias -->
+	<typeAliases>
+	   <typeAlias type="com.dto.Dept" alias="Dept"/>
+	</typeAliases>
+	
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="${oracle.jdbc}" />
+				<property name="url" value="${oracle.url}" />
+				<property name="username" value="${oracle.userid}" />
+				<property name="password" value="${oracle.passwd}" />
+			</dataSource>
+		</environment>
+	</environments>
+	<mappers>
+		<mapper resource="DeptMapper.xml" />
+		<mapper resource="DeptMapper2.xml" />
+		<mapper resource="DeptMapper3.xml" />
+		<mapper resource="DeptMapper4.xml" />
+		<mapper resource="DeptMapper5.xml" />
+	</mappers>
+</configuration>
+
