@@ -6,7 +6,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/Users/qkdnv/OneDrive/바탕 화면/에이콘/자바개발자과정(2022_04)/05_SERVLET_JSP/드라이버/mybatis-3.5.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/qkdnv/OneDrive/바탕 화면/에이콘/자바개발자과정(2022_04)/05_SERVLET_JSP/드라이버/ojdbc6_g.jar"/>
+	<classpathentry kind="lib" path="E:/chul_22_04_29/1_JAVA/mybatis _ORACLE 드라이버/ojdbc6_g.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
